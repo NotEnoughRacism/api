@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es2017"],
+    "outDir": "build",
+    "rootDir": "src",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitUseStrict": true,
+    "alwaysStrict": false,
+    "declaration": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "./*.js"
+  ],
+  "include": [
+    "./src/*"
+  ]
+}
