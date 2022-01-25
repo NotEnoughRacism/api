@@ -173,10 +173,8 @@ class Spotify {
 
             await Mongo.updateUser(uuid, {
                 spotify: {
-                    accessToken: {
-                        token: spotifyRes.access_token,
-                        expiryDate: Date.now() + spotifyRes.expires_in * 1000
-                    }
+                    accessToken: spotifyRes.access_token,
+                    expiryDate: Date.now() + spotifyRes.expires_in * 1000
                 }
             });
             return response.status(200).json({
